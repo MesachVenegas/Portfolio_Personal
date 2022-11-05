@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root{
+    --body-background: #202020;
+    --container-color: #272727;
+    --red_salsa: #FB3640;
+    --green_sheen: #70C1B3;
+    --deep_jungle: #1C5253;
+    --Palatinate_purple: #682D63;
+    --text_color_alt: #3C3C3C;
+    --text_color: #FFF;
+    --body_font: font-family: 'Rubik', sans-serif;
+    --name_font: font-family: 'Monoton', cursive;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--body-background);
+    color: var(--text_color);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    width: 100vw;
+    gap: 1rem;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.logo>a>img{
+    width: 40px;
+    height: 30px;
+}
+
+.nav-link{
+    color: var(--text_color);
+}
+
+.btn-menu{
+    cursor: pointer;
+    color: var(--red_salsa);
+}
+
+/* Header Section */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.logo-name{
+        font-family: var(--name_font);
+        font-size: 5rem;
+        color: var(--red_salsa);
+}
+
+.header-text{
+    text-align: left;
+}
+
+/* what i do section */
+.what_i_do{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2.5rem;
+    background-color: var(--container-color);
+    margin-bottom: 2rem;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    width: 100%;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    background-color: var(--red_salsa);
+}
+
+.card-icon{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-size: 4rem;
+    color: var(--body-background);
+}
+
+.card-title{
+    color: var(--body-background);
+    text-align: center;
+}
+
+/* projects sections */
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.project-img{
+    width: 90vw;
+}
