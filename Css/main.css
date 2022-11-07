@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap');
 
 
@@ -13,7 +13,7 @@
     --text_color: #1b1b1b;
     --body_font: 'Rubik', sans-serif;
     --code_font: 'Source Code Pro', monospace;
-    --name_font: 'Monoton', cursive;
+    --name_font: 'Press Start 2P', cursive;
     --first-shadow: 0 10px 18px 0 var(--first-color),
             0 8px 22px 0 var(--first-color);
     --second-shadow: 0 2px 4px 0 var(--first-color),
