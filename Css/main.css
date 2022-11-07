@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap');
+
 
 :root{
-    --body-background: #1b1b1b;
+    --body-background: #FFF;
     --container-color: #272727;
     --first-color: #80009e;
     --Palatinate_purple: #682d637e;
+    --rose: #FF0F80;
     --text_color_alt: #3C3C3C;
-    --text_color: #FFF;
-    --body_font: font-family: 'Rubik', sans-serif;
-    --name_font: font-family: 'Monoton', cursive;
+    --text_color: #1b1b1b;
+    --body_font: 'Rubik', sans-serif;
+    --code_font: 'Source Code Pro', monospace;
+    --name_font: 'Monoton', cursive;
     --first-shadow: 0 10px 18px 0 var(--first-color),
             0 8px 22px 0 var(--first-color);
     --second-shadow: 0 2px 4px 0 var(--first-color),
             0 2px 4px 0 var(--first-color);
+    --btn-shadow: 0 8px 16px 0 var(--first-color),
+            0 6px 18px 0 var(--first-color);
 }
 
 *{
@@ -22,8 +28,16 @@
 }
 
 body{
+    font-family: var(--body_font);
     background-color: var(--body-background);
     color: var(--text_color);
+}
+
+body.dark{
+    --body-background: #1b1b1b;
+    --text_color: #FFF;
+    --btn-shadow: 0 8px 16px 0 var(--Palatinate_purple),
+            0 6px 18px 0 var(--Palatinate_purple);
 }
 
 .hidden{
@@ -44,6 +58,7 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    z-index: 10;
 }
 
 .loader__round{
@@ -79,21 +94,131 @@ body{
 }
 
 /************** Navigation bar **************/
-.navbar{
+.nav{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 90px;
+    height: 80px;
+    width: 100vw;
+    max-width: 1300px;
+    padding: 1.5rem 1rem;
+    margin: auto;
+    font-weight: bold;
+    top: 0;
+    left: 0;
     background-color: var(--body-background);
-    box-shadow: var(--second-shadow);
 }
 
-.brand{
+.nav__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.nav__logo {
+    width: 2.5em;
+}
+
+.nav__slogan {
+    font-size: 1rem;
+    font-family: var(--code_font);
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 80px);
+    left: -100%;
+    top: 80px;
+    margin-right: 0;
+    background-color: var(--container-color);
+    list-style: none;
+    padding: 2rem 0;
+    gap: 2rem;
+    overflow-y: auto;
+}
+
+.nav__menu--open{
+    left: 0;
+}
+
+.nav__menu__item {
+    font-size: 1.2rem;
+    margin: 0 8px;
+    align-self: center;
+}
+
+.nav__menu__link:hover{
+    background-color: var(--Palatinate_purple);
+    box-shadow: var(--btn-shadow);
+}
+
+.nav__menu__link.active {
+    color: var(--rose);
+}
+.nav__menu__link {
+    color: var(--text_color);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.icons__menu{
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
-.logo__navbar{
-    width: 60px;
+#mode {
+    font-size: 1.4rem;
+}
+
+
+
+.btn__menu{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: .5s;
+}
+
+.stripe{
+    width: 30px;
+    height: 4px;
+    border-radius: 1rem;
+    background-color: var(--text_color);
+}
+
+.main{
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 576px){
+    .nav__brand{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 200px;
+        }
+
+        .nav__logo{
+            width: 3.5em;
+        }
+
+        .nav__slogan {
+            font-size: 1.3rem;
+        }
+
+        .nav__menu {
+            flex-direction: row;
+        }
 }

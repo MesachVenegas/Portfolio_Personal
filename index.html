@@ -11,8 +11,8 @@
     <link rel="shortcut icon" href="./Assets/Imgs/logo.png" type="image/x-icon">
     <title>MeshDev | Coding your Dreams</title>
 </head>
-<body>
-    <header>
+<body class="dark" id="body">
+    <header class="header">
         <!-- Website Loader -->
         <div class="loader" id="loader_container">
             <div class="loader__round loader__round--shadow ">
@@ -21,28 +21,42 @@
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="nav">
             <!-- Brand Logo -->
-            <div class="brand">
-                <img class="logo__navbar" src="./Assets/Imgs/logo.png" alt="logo_mesh">
-                <span class="slogan">Coding your Dreams</span>
+            <div class="nav__brand">
+                <img class="nav__logo" src="./Assets/Imgs/logo.png" alt="logo_mesh">
+                <span class="nav__slogan">Coding your dreams</span>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="icons__menu">
+                <span id="mode"><i class="fa-solid fa-circle-half-stroke"></i></span>
+                <div class="btn__menu" id="btn_menu">
+                    <span class="stripe" id="1"></span>
+                    <span class="stripe" id="2"></span>
+                    <span class="stripe" id="3"></span>
+                </div>
             </div>
             <!-- Navigation Menu -->
-            <ul class="menu__nav hidden">
-                <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="#about">About me</a></li>
-                <li class="menu__item"><a class="menu__link" href="#project">Projects</a></li>
-                <li class="menu__item"><a class="menu__link" href="#technologies">Technologies</a></li>
-                <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+            <ul class="nav__menu" id="menu">
+                <li class="nav__menu__item"><a class="nav__menu__link active" href="#home">Home</a></li>
+                <li class="nav__menu__item"><a class="nav__menu__link" href="#about">About me</a></li>
+                <li class="nav__menu__item"><a class="nav__menu__link" href="#project">Projects</a></li>
+                <li class="nav__menu__item"><a class="nav__menu__link" href="#technologies">Technologies</a></li>
+                <li class="nav__menu__item"><a class="nav__menu__link" href="#contact">Contact</a></li>
+                <!-- <li id="mode"><i class="fa-solid fa-circle-half-stroke"></i></li> -->
             </ul>
-            <!-- Mobile Menu -->
-            <div class="hamburger__btn">
-                <span class="stripe"></span>
-                <span class="stripe"></span>
-                <span class="stripe"></span>
-            </div>
         </nav>
     </header>
+    <!-- Website Content -->
+    <main class="main">
+        <section id="home">
+            <h1>MeshDev</h1>
+        </section>
+        <section id="about"></section>
+        <section id="project"></section>
+        <section id="technologies"></section>
+        <section id="contact"></section>
+    </main>
 
 
     <!-- Main Script -->
