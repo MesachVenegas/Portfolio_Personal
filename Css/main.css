@@ -20,6 +20,7 @@
             0 2px 4px 0 var(--first-color);
     --btn-shadow: 0 8px 16px 0 var(--first-color),
             0 6px 18px 0 var(--first-color);
+    --subtitle-color: var(--first-color);
 }
 
 *{
@@ -37,15 +38,26 @@ body{
 body.dark{
     --body-background: #1b1b1b;
     --text_color: #FFF;
-    --btn-shadow: 0 8px 16px 0 var(--Palatinate_purple),
-            0 6px 18px 0 var(--Palatinate_purple);
-    --container-color: #272727;
+    --btn-shadow: 0 8px 16px 0 var(--Palatinate_purple), 0 6px 18px 0 var(--Palatinate_purple);
+    --container-color: #2b2929;
+    --text_color_alt: #d8d8d8;
+    --first-color: #FF0F80;
+}
+
+section{
+    width: 100%;
+    padding: 2rem;
 }
 
 .hidden{
     display: none;
 }
 
+.subtitle {
+    text-align: center;
+    color: var(--first-color);
+    padding: 2rem 0;
+}
 
 /**************** Loading section ****************/
 .loader.hidden{
@@ -119,7 +131,7 @@ body.dark{
 }
 
 .nav__logo {
-    width: 2.5em;
+    width: 3em;
 }
 
 .nav__slogan {
@@ -213,13 +225,10 @@ body.dark{
 
 
 /* Website content */
-.main{
-    padding: 2rem;
-}
-
 .home{
+    background-color: var(--container-color);
     width: 100%;
-    height: 250px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,10 +241,57 @@ body.dark{
     font-family: var(--name_font);
 }
 
-.subtitle {
+.home__subtitle{
     text-align: center;
-    color: var(--first-color);
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--text_color_alt);
 }
+
+.description{
+    padding: 1rem;
+    width: 90%;
+}
+
+/* Technologies I'm use */
+.technologies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech__slide{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.slide__item{
+    width: 30%;
+}
+
+/* Projects */
+.projects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.gallery{
+    display: grid;
+    gap: 2rem;
+}
+
+.gallery__img{
+    width: 300px;
+}
+
 
 @media screen and (min-width: 576px){
     .nav__brand{
