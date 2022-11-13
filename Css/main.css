@@ -294,11 +294,16 @@ section{
     align-items: center;
     overflow-x: scroll;
     margin: 2rem 0;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .slide__item{
-    width: 20%;
+    max-width: 20%;
+    opacity: .3;
+}
+
+.slide__item:hover{
+    opacity: 1;
 }
 
 /* Projects */
@@ -317,11 +322,20 @@ section{
     gap: 2rem;
 }
 
+.figure__img{
+    border-radius: .5rem;
+    max-width: 450px;
+    overflow: hidden;
+}
+
 .gallery__img{
     cursor: pointer;
-    width: 230px;
-    max-width: 460px;
-    box-shadow: 0 8px 16px  var(--first-color), 0 6px 20px  var(--Palatinate_purple);
+    width: 100%;
+}
+
+.figure__img:hover{
+    max-width: 500px;
+    box-shadow: 0 8px 16px var(--first-color), 0 6px 20px var(--Palatinate_purple);
 }
 
 /* About Me */
@@ -340,12 +354,17 @@ section{
     border-radius: 50%;
     width: 300px;
     height: 300px;
+    overflow: hidden;
     background-color: var(--Palatinate_purple);
     box-shadow: 0 8px 16px rgba(0, 0, 0, .3), 0 8px 22px rgba(0, 0, 0, .5);
 }
 
 .about__img--img{
-    width: 80%;
+    width: 100%;
+}
+
+.about__HowIm{
+    font-size: 1.2rem;
 }
 
 
