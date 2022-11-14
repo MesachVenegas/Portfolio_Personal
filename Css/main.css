@@ -432,6 +432,37 @@ section{
     box-shadow: 0 8px 16px var(--first-color), 0 16px 22px var(--Palatinate_purple);
 }
 
+/********** Footer Section **********/
+.foot{
+    padding: 1.5rem;
+    background-color: var(--container-color);
+}
+
+.foot__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.foot__copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.foot__list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: none;
+}
+
+.foot__link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text_color);
+}
 
 /* Media Frames */
 @media screen and (min-width: 576px){
