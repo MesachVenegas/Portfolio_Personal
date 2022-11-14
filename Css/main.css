@@ -458,10 +458,26 @@ section{
     list-style: none;
 }
 
+.foot__list--icons{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 .foot__link{
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--text_color);
+}
+
+.foot__link--social{
+    font-size: 2rem;
+}
+
+.foot__link:hover,
+.icon-heart{
+    color: var(--first-color);
 }
 
 /* Media Frames */
