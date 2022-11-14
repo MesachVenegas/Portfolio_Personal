@@ -166,7 +166,7 @@ section{
     padding: 2rem 0;
     gap: 2rem;
     overflow-y: auto;
-    transition: left .7s ease-out;
+    /* transition: left .7s ease-out; */
     z-index: 10;
 }
 
@@ -325,7 +325,6 @@ section{
 .figure__img{
     border-radius: .5rem;
     max-width: 450px;
-    overflow: hidden;
 }
 
 .gallery__img{
@@ -385,7 +384,7 @@ section{
 .contact__form{
     display: flex;
     width: 90%;
-    height: 200px;
+    height: 300px;
     border-radius: .5rem;
     flex-direction: column;
     justify-content: center;
@@ -394,6 +393,21 @@ section{
     box-shadow: 0 8px 16px rgba(0, 0, 0, .3), 0 10px 22px rgba(0, 0, 0, .5) ;
 }
 
+.form__label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 .5rem;
+}
+
+.form__input{
+    font-family: inherit;
+    font-size: inherit;
+    height: 40px;
+    border: none;
+    border-radius: .5rem;
+}
+
+
 .form__name{
     width: auto;
 }
@@ -401,11 +415,21 @@ section{
 .form__btn{
     font-size: 1.3rem;
     font-weight: bold;
-    opacity: .5;
+    opacity: .7;
     width: 60%;
     height: 50px;
+    border: none;
     background-color: var(--Palatinate_purple);
     border-radius: .5rem;
+    color: var(--text_color);
+}
+
+.form__btn:hover{
+    border: none;
+    opacity: 1;
+    color: #FFF;
+    background-color: var(--first-color);
+    box-shadow: 0 8px 16px var(--first-color), 0 16px 22px var(--Palatinate_purple);
 }
 
 
