@@ -46,7 +46,7 @@ body.dark{
 
 section{
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .hidden{
@@ -59,6 +59,10 @@ section{
     text-align: center;
     color: var(--first-color);
     padding: 2rem 0;
+}
+
+.main{
+    position: relative;
 }
 
 /**************** Loading section ****************/
@@ -75,7 +79,7 @@ section{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    z-index: 100;
+    z-index: 50;
 }
 
 .loader__round{
@@ -123,16 +127,18 @@ section{
 .nav{
     display: flex;
     align-items: center;
+    position: sticky;
     justify-content: space-between;
     height: 80px;
     width: 100vw;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     padding: 1.5rem 1rem;
     margin: auto;
     font-weight: bold;
     top: 0;
     left: 0;
     background-color: var(--body-background);
+    z-index: 20;
 }
 
 .nav__brand {
@@ -167,7 +173,7 @@ section{
     gap: 2rem;
     overflow-y: auto;
     /* transition: left .7s ease-out; */
-    z-index: 10;
+    z-index: 20;
 }
 
 .nav__menu--open{
@@ -243,7 +249,7 @@ section{
 .home{
     background-color: var(--container-color);
     width: 100%;
-    height: 450px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,7 +265,7 @@ section{
 .code__pointer {
     position: absolute;
     animation: fade .9s ease-in infinite;
-    z-index: 1;
+    z-index: 10;
 }
 
 .home__subtitle{
@@ -402,9 +408,16 @@ section{
 .form__input{
     font-family: inherit;
     font-size: inherit;
-    height: 40px;
+    width: 300px;
+    height: 45px;
     border: none;
     border-radius: .5rem;
+    background-color: #a7a7a7;
+}
+
+.form__input:focus{
+    outline: 1px ridge var(--first-color);
+    box-shadow: 0 8px 16px 0 var(--first-color), 0 16px 22px 0 var(--Palatinate_purple);
 }
 
 
@@ -471,12 +484,19 @@ section{
     color: var(--text_color);
 }
 
+.foot__logo{
+    color: var(--first-color);
+    font-family: var(--name_font);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .foot__link--social{
     font-size: 2rem;
 }
 
 .foot__link:hover,
-.icon-heart{
+.icon-heart:hover{
     color: var(--first-color);
 }
 

@@ -22,12 +22,25 @@ const menu = () =>{
     const stripe2 = document.getElementById('2')
     const stripe3 = document.getElementById('3')
     const menu = document.getElementById('menu')
+    const option = document.querySelectorAll('.nav__menu__link');
     btnMenu.addEventListener('click', e =>{
         menu.classList.toggle('nav__menu--open')
         stripe1.classList.toggle('stripe__open--1')
         stripe2.classList.toggle('hidden')
         stripe3.classList.toggle('stripe__open--2')
     })
+    option.forEach(selection => {
+        selection.addEventListener('click', e => {
+            option.forEach(selection => {
+                selection.classList.remove('active');
+                menu.classList.toggle('nav__menu--open')
+                stripe1.classList.toggle('stripe__open--1')
+                stripe2.classList.toggle('hidden')
+                stripe3.classList.toggle('stripe__open--2')
+            });
+            e.target.classList.add('active');
+        })
+    });
 }
 
 document.addEventListener( "DOMContentLoaded", () => {
