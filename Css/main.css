@@ -46,7 +46,7 @@ body.dark{
 
 section{
     width: 100%;
-    padding: 1.5rem;
+    padding: 3rem 1.8rem;
 }
 
 .hidden{
@@ -141,7 +141,6 @@ section{
     max-width: 1300px;
     border-radius: .5rem;
     padding: 1.5rem 1rem;
-    margin: auto;
     font-weight: bold;
     background-color: var(--body-background);
     z-index: 30;
@@ -414,7 +413,7 @@ section{
 .form__input{
     font-family: inherit;
     font-size: inherit;
-    width: 300px;
+    width: auto;
     height: 45px;
     border: none;
     border-radius: .5rem;
