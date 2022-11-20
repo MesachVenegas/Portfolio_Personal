@@ -46,7 +46,7 @@ body.dark{
 
 section{
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .hidden{
@@ -63,9 +63,15 @@ section{
 
 .main{
     position: relative;
+    z-index: 10;
 }
 
 /**************** Loading section ****************/
+.header{
+    position: relative;
+    z-index: 50;
+}
+
 .loader.hidden{
     display: none;
     animation: fade 5s;
@@ -79,7 +85,7 @@ section{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    z-index: 50;
+    /* z-index: 50; */
 }
 
 .loader__round{
@@ -128,17 +134,17 @@ section{
     display: flex;
     align-items: center;
     position: sticky;
+    top: 0;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
     width: 100vw;
-    /* max-width: 1300px; */
+    max-width: 1300px;
+    border-radius: .5rem;
     padding: 1.5rem 1rem;
     margin: auto;
     font-weight: bold;
-    top: 0;
-    left: 0;
     background-color: var(--body-background);
-    z-index: 20;
+    z-index: 30;
 }
 
 .nav__brand {
@@ -165,7 +171,7 @@ section{
     width: 100vw;
     height: calc(100% - 80px);
     left: -100%;
-    top: 80px;
+    top: 70px;
     margin-right: 0;
     background-color: var(--container-color);
     list-style: none;
@@ -173,7 +179,7 @@ section{
     gap: 2rem;
     overflow-y: auto;
     /* transition: left .7s ease-out; */
-    z-index: 20;
+    z-index: 30;
 }
 
 .nav__menu--open{
@@ -265,7 +271,7 @@ section{
 .code__pointer {
     position: absolute;
     animation: fade .9s ease-in infinite;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .home__subtitle{
