@@ -139,7 +139,7 @@ section{
     justify-content: space-between;
     height: 70px;
     width: 100vw;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     border-radius: .5rem;
     padding: 1.5rem 1rem;
     font-weight: bold;
@@ -193,7 +193,14 @@ section{
 }
 
 .nav__menu__link:hover{
-    background-color: var(--Palatinate_purple);
+    background-color: var(--first-color);
+    color: #FFF;
+    box-shadow: var(--btn-shadow);
+}
+
+.nav__menu__link:hover.active{
+    background-color: var(--first-color);
+    color: #FFF;
     box-shadow: var(--btn-shadow);
 }
 
@@ -620,10 +627,64 @@ section{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    ...
+    .btn__menu{
+        display: none;
+    }
+
+    .nav__menu{
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 70px;
+        gap: .5rem;
+        padding: 0;
+        top: 0;
+        left: 0;
+        background-color: var(--body-background);
+    }
+
+    .nav__menu__item{
+        margin: 0 4px;
+    }
+
+
+    .figure__img{
+        max-width: 400px;
+    }
+    .foot {
+        height: 490px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot__list {
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .foot__container {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .foot__nav {
+        margin-top: 4rem;
+    }
+
+    .foot__logo {
+        font-size: 3rem;
+    }
+
+    .foot__copy__p{
+        margin: 2rem 0;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     ...
-}
+} */
