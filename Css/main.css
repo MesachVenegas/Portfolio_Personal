@@ -32,7 +32,7 @@ body{
     font-family: var(--body_font);
     background-color: var(--body-background);
     color: var(--text_color);
-    transition: .5s linear;
+    transition: .9s linear;
 }
 
 body.dark{
@@ -371,7 +371,6 @@ section{
 }
 
 .figure__img:hover{
-    max-width: 500px;
     box-shadow: 0 8px 16px var(--first-color), 0 6px 20px var(--Palatinate_purple);
 }
 
@@ -637,7 +636,7 @@ section{
         justify-content: flex-end;
         height: 70px;
         gap: .5rem;
-        padding: 0;
+        padding: 0 1rem;
         top: 0;
         left: 0;
         background-color: var(--body-background);
@@ -647,6 +646,18 @@ section{
         margin: 0 4px;
     }
 
+    .home{
+        flex-direction: row;
+    }
+
+    .home__landing__img{
+        width: 700px;
+        height: 300px;
+    }
+
+    .slide__item{
+        max-width: 15%;
+    }
 
     .figure__img{
         max-width: 400px;
