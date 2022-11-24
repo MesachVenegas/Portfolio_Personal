@@ -540,15 +540,22 @@ section{
 .foot__copy{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    padding: 2rem;
+    background-color: var(--body-background);
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
 }
 
 .foot__list{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
     list-style: none;
+}
+
+.foot__title{
+    color: var(--first-color);
 }
 
 .foot__bg--icon{
@@ -557,6 +564,8 @@ section{
     align-items: center;
     cursor: pointer;
     border-radius: 50%;
+    width: 15px;
+    height: 15px;
 }
 
 .foot__bg--icon:hover{
@@ -670,8 +679,8 @@ section{
     }
 
     .foot__bg--icon{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .foot__nav{
@@ -737,10 +746,8 @@ section{
     }
 
     .foot__container {
-        flex-direction: row;
+        width: 90%;
         justify-content: space-around;
-        width: 80%;
-        flex-wrap: wrap;
     }
 
     .foot__nav {
@@ -762,6 +769,10 @@ section{
 
     .foot__logo {
         font-size: 3rem;
+    }
+
+    .foot__list--icons {
+        margin-top: 5rem;
     }
 }
 
@@ -817,10 +828,5 @@ section{
     .form__btn{
         text-align: center;
         width: 30%;
-    }
-
-
-    .foot__list--icons{
-        margin-top: 4rem;
     }
 }
