@@ -505,8 +505,9 @@ section{
 
 .contact__divisor{
     width: 100%;
-    height: 1px;
-    border: 2px solid var(--first-color);
+    height: 4px;
+    border: none;
+    background-color: var(--first-color);
 }
 
 .contact__form{
@@ -719,6 +720,11 @@ section{
         width: 350px;
         height: 350px;
     }
+
+    .contact__divisor {
+        height: 4px;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -767,6 +773,10 @@ section{
 
     .contact__form{
         width: 80%;
+    }
+
+    .contact__description{
+        font-size: 1.3rem;
     }
 
 
@@ -856,6 +866,24 @@ section{
         font-size: 1.5rem;
     }
 
+    .contact__container{
+        justify-content:left;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .contact__description>p{
+        font-size: 1.3rem;
+    }
+
+    .contact__divisor {
+        transform: rotate(90deg) scaleX(2);
+    }
+
+    .contact__form{
+        width: 3000px;
+    }
+
     .foot {
         display: flex;
         flex-direction: column;
@@ -940,23 +968,11 @@ section{
         font-size: 1.4rem;
     }
 
-    .contact__form{
-        width: 60%;
-        display: flex;
+    .contact__container{
+        width: 80%;
     }
 
-    .form__name,
-    .form__email{
-        text-align: center;
-        width: 70%;
-    }
-
-    .form__input{
-        width: 60%;
-    }
-
-    .form__btn{
-        text-align: center;
-        width: 30%;
+    .contact__divisor {
+        transform: rotate(90deg) scaleX(1.5);
     }
 }
