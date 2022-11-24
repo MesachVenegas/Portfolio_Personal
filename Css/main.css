@@ -52,7 +52,7 @@ body.dark{
 
 section{
     width: 100vw;
-    height: 100%vh;
+    height: fit-content;
     padding: 3rem 1.8rem;
 }
 
@@ -779,7 +779,6 @@ section{
         font-size: 1.3rem;
     }
 
-
     .foot__list{
         padding: 0;
         gap: 1.5rem;
@@ -898,6 +897,7 @@ section{
 
     .foot__container {
         width: 90%;
+        align-items: center;
         justify-content: space-around;
     }
 
@@ -974,5 +974,9 @@ section{
 
     .contact__divisor {
         transform: rotate(90deg) scaleX(1.5);
+    }
+
+    .foot__container{
+        height: 80vh;
     }
 }
