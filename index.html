@@ -197,19 +197,25 @@
         </section>
 
         <section class="contact" id="contact">
-            <h2 class="subtitle">Contact</h1>
-                <h3 class="contact__phrase">Contácteme y hagamos cosas geniales juntos.</h3>
-                <form action="/contact" class="contact__form">
-                    <div class="form__name">
-                        <label class="form__label" for="name">Nombre: </label>
-                        <input class="form__input" type="text" id="name" placeholder="example">
+            <div class="contact__container">
+                <div class="contact__description">
+                    <h2 class="subtitle">Contact</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla vitae ipsum corrupti optio odit eligendi mollitia molestiae! Expedita a facere saepe sunt quas quisquam harum voluptate quo quia corporis.</p>
+                </div>
+                <hr class="contact__divisor">
+                <form class="contact__form">
+                    <div class="form__container form__name">
+                        <input class="form__input" type="text" id="name" placeholder="Nombre">
                     </div>
-                    <div class="form__email">
-                        <label class="form__label" for="name">Correo: </label>
-                        <input class="form__input" type="email" id="name" placeholder="example@meshdev.com.mx">
+                    <div class="form__container form__email">
+                        <input class="form__input" type="email" id="email" placeholder="Email">
                     </div>
-                    <button class="form__btn" type="submit">Enviar</button>
+                    <div class="form__text-area__container">
+                        <textarea class="form__text-area" name="message" id="message" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button class="form__btn">Enviar</button>
                 </form>
+            </div>
         </section>
     </main>
 
