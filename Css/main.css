@@ -208,7 +208,7 @@ section{
 }
 
 .nav__menu__link.active {
-    color: var(--rose);
+    color: var(--first-color);
 }
 .nav__menu__link {
     color: var(--text_color);
@@ -714,6 +714,7 @@ section{
     }
 
     .nav__menu__item{
+        font-size: 1.2rem;
         margin: 0 4px;
     }
 
@@ -754,10 +755,6 @@ section{
         margin-top: 4rem;
     }
 
-
-    .foot__copy__p{
-        margin: 2rem 0;
-    }
 
     .foot__link{
         font-size: 1.2rem;
