@@ -1,3 +1,3 @@
 # Portfolio_Personal
 
-Maquetado de Langin Page Portfolio personal 
+Maquetado de Landing Page Portfolio personal
