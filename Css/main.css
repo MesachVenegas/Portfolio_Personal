@@ -54,6 +54,7 @@ section{
     width: 100vw;
     height: fit-content;
     padding: 3rem 1.8rem;
+    transition: left .5s linear;
 }
 
 .hidden{
