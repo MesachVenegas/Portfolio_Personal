@@ -68,6 +68,10 @@ section{
     padding: 2rem 0;
 }
 
+::placeholder{
+    color: #FFF;;
+}
+
 .main{
     position: relative;
     z-index: 10;
